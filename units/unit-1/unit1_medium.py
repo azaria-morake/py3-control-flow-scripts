@@ -11,7 +11,7 @@ def smart_thermo(current_temp, desired_temp, system_status):
     elif system_status == "on":
         if current_temp > (desired_temp + 2):
             print("Cooling active.")
-        elif current_temp > (desired_temp - 2):
+        elif current_temp < (desired_temp - 2):
             print("Heating active.")
         else:
             print("Temperature stable. Standby mode.")
